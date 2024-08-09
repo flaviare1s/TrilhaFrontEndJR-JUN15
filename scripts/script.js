@@ -1,6 +1,6 @@
 const body = document.getElementById('body')
-const btnDark = document.getElementById('btn-lua')
-const btnLight = document.getElementById('btn-sol')
+const btnDark = document.getElementById('btn-sol')
+const btnLight = document.getElementById('btn-lua')
 const titleLight = document.getElementById('title-light')
 const titleDark = document.getElementById('title-dark')
 const imagemLight = document.getElementById('light-imagem')
@@ -16,8 +16,9 @@ btnLight.addEventListener('click', () => {
   titleDark.classList.remove('hidden')
   imagemLight.classList.add('hidden')
   imagemDark.classList.remove('hidden')
-  sobre.style.color = '#ffffff'
-  footer.classList.add('footer-dark')
+  footer.classList.remove('footer-light')
+  sobre.classList.remove('text-white')
+  sobre.classList.add('text-black')
 })
 
 btnDark.addEventListener('click', () => {
@@ -28,7 +29,8 @@ btnDark.addEventListener('click', () => {
   titleLight.classList.remove('hidden')
   imagemDark.classList.add('hidden')
   imagemLight.classList.remove('hidden')
-  sobre.style.color = '#000000'
-  footer.classList.remove('footer-dark')
+  footer.classList.add('footer-light')
+  sobre.classList.add('text-black')
+  sobre.classList.remove('text-white')
 })
 

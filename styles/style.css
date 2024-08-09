@@ -20,6 +20,8 @@ body {
   width: 95%;
   overflow-x: hidden;
   font-size: 18px;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 a {
@@ -62,6 +64,14 @@ button {
   width: 90%;
 }
 
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
 .sobre-content {
   padding: 0px 10px;
   margin: 30px 0px;
@@ -89,6 +99,11 @@ button {
   color: var(--white);
 }
 
+.light {
+  background-color: transparent;
+  color: var(--black);
+}
+
 .hidden {
   display: none;
 }
@@ -101,13 +116,17 @@ footer {
   width: 100vw;
   padding: 20px;
   text-align: center;
-  background-color: var(--black);
-  color: var(--white);
+  color: var(--black);
+  background-color: var(--white);
 }
 
-.footer-dark {
-  background-color: var(--white);
-  color: var(--black);
+footer a:hover {
+  color: var(--red);
+}
+
+.footer-light {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
