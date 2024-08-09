@@ -17,8 +17,8 @@ btnLight.addEventListener('click', () => {
   imagemLight.classList.add('hidden')
   imagemDark.classList.remove('hidden')
   footer.classList.remove('footer-light')
-  sobre.classList.remove('text-white')
-  sobre.classList.add('text-black')
+  sobre.classList.remove('text-black')
+  sobre.classList.add('text-white')
 })
 
 btnDark.addEventListener('click', () => {
@@ -30,7 +30,6 @@ btnDark.addEventListener('click', () => {
   imagemDark.classList.add('hidden')
   imagemLight.classList.remove('hidden')
   footer.classList.add('footer-light')
-  sobre.classList.add('text-black')
   sobre.classList.remove('text-white')
+  sobre.classList.add('text-black')
 })
-
