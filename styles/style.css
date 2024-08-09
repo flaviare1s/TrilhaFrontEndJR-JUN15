@@ -1,0 +1,113 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red: #e53939;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#sol:hover path, #lua:hover path {
+  fill: var(--red);
+}
+
+.imagem-container {
+  width: 90%;
+}
+
+.imagem {
+  width: 100%;
+}
+
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 90%;
+  }
+
+  .imagem-container {
+    position: relative;
+  }
+
+  .title {
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 30px;
+  }
+
+  body {
+    width: 70%;
+  }
+
+  .imagem-container {
+    position: relative;
+  }
+
+  .title {
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
